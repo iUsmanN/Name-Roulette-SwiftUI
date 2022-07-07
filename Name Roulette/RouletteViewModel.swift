@@ -12,7 +12,7 @@ class RouletteViewModel: NSObject, ObservableObject, LockPickRandomiserDataSourc
     
     @Published var randomMember = ""
     @Published var randomMemberCharacterCounts: [CharacterCount] = []
-    @Published var lockRingStates = ["t","h","e"," ", "g","u","a","r","d","i","a","n"," ","","","","","","","","","","","","","","","",""]
+    @Published var lockRingStates = ["t","h","e"," ", "g","u","a","r","d","i","a","n"," ","","",""]
     @Published var lockRingValues = ["x", "p", "e", "o", "j", "m", " ", "i", "b", "z", "a", "y", "g", "l", "q", "d", "r", "v", "h", "s", "c", "w", "f", "t", "k", "n", "u"]
     
     internal var allWords = [

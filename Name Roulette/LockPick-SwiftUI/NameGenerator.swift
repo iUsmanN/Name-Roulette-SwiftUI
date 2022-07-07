@@ -14,11 +14,16 @@ class LockPickDataGenerator {
     private var team: [String] = []
     private var used: [String] = []
     
+    /// Generates the data for the picker. Always call this first.
+    /// - Parameters:
+    ///   - allTeam: "All words"
+    ///   - unavailableTeam: "Unavailable/Used words"
     func setup(allTeam: [String], unavailableTeam: [String]){
         team = allTeam
         used = unavailableTeam
     }
     
+    /// Returns the remaining members that have not been used before
     private func remainingMembers() -> [String] {
         guard !used.isEmpty else { return team }
         return team.filter { member in !used.contains(member)}

@@ -10,10 +10,10 @@ import SwiftUI
 struct LockPickRandomiserView: View {
     
     // Current values being shown
-    @Binding private var lockRingStates: [String]// = ["x", "x", "x"]
+    @Binding var lockRingStates: [String]// = ["x", "x", "x"]
     
     // All possible values of the rings
-    @Binding private var lockRingValues: [String]// = ["x", "y", "z"]
+    @Binding var lockRingValues: [String]// = ["x", "y", "z"]
     
     var body: some View {
         HStack {
@@ -25,17 +25,8 @@ struct LockPickRandomiserView: View {
                 }
                 .pickerStyle(.wheel)
                 .animation(.spring())
-                .frame(maxWidth: 10)
+                .frame(maxWidth: 12)
             }
         }
-        .background(.red)
     }
 }
-
-//struct LockPickRandomiserView_Previews: PreviewProvider {
-//    @State private var testStates: [String] =
-//    @State private var testStates: [String] =
-//    static var previews: some View {
-//        LockPickRandomiserView(lockRingStates: , lockRingValues: ["x","y"])
-//    }
-//}
