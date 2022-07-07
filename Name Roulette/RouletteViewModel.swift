@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import LockPickSwiftUI
 
 class RouletteViewModel: NSObject, ObservableObject, LockPickRandomiserDataSource {
     

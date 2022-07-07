@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import LockPickSwiftUI
 
 enum TeamTab {
     case unavailable
@@ -20,18 +21,6 @@ struct RouletteView: View {
     var body: some View {
         VStack {
             LockPickRandomiserView(lockRingStates: $viewModel.lockRingStates, lockRingValues: $viewModel.lockRingValues)
-//            HStack {
-//                ForEach(0..<16, id: \.self) { index in
-//                    Picker("", selection: $viewModel.lockRingStates[index]) {
-//                        ForEach(viewModel.lockRingValues, id: \.self) { alphabet in
-//                            Text(alphabet)
-//                        }
-//                    }
-//                    .pickerStyle(.wheel)
-//                    .animation(.spring())
-//                    .frame(maxWidth: 10)
-//                }
-//            }
             VStack {
                 Picker("", selection: $teamTab) {
                     Text("All")
