@@ -48,7 +48,7 @@ struct RouletteView: View {
                         Text(person)
                     }
                 case .available:
-                    List(viewModel.getTeam(), id: \.self) { person in
+                    List(viewModel.getAll(), id: \.self) { person in
                         Text(person)
                     }
                 }
