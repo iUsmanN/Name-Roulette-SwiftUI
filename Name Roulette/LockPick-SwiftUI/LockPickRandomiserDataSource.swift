@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol LockPickRandomiserDataSource: NSObject {
+public protocol LockPickRandomiserDataSource: NSObject {
     var randomMember: String {get set}
     var randomMemberCharacterCounts: [CharacterCount] {get set}
     
@@ -27,16 +27,18 @@ protocol LockPickRandomiserDataSource: NSObject {
 
 extension LockPickRandomiserDataSource {
     
-    func refreshLockData() {
+    /// Refreshes the lock state with a new random word.
+    public func refreshLockData() {
         randomMember = LockPickDataGenerator.shared.getRandomMember()
         randomMemberCharacterCounts = LockPickDataGenerator.shared.randomMemberCharacterCounts(member: randomMember)
         updateLockRingStates()
     }
     
-    func updateLockRingStates() {
+    /// Updates the states of the rings.
+    public func updateLockRingStates() {
         steps = randomMemberCharacterCounts.count
         guard !randomMemberCharacterCounts.isEmpty else { return }
-        Timer.scheduledTimer(withTimeInterval: 0.6, repeats: true) { timer in
+        Timer.scheduledTimer(withTimeInterval: 0.4, repeats: true) { timer in
             guard min(5, self.steps) > 0 else { timer.invalidate(); return }
             let characterCount = self.randomMemberCharacterCounts.removeFirst()
             let indexes = self.randomMember.enumerated().filter({ $0.element == characterCount.0 }).map({ $0.offset })
@@ -54,11 +56,11 @@ extension LockPickRandomiserDataSource {
 //        }
     }
     
-    func getAll() -> [String] {
+    public func getAll() -> [String] {
         return allWords
     }
     
-    func getUsed() -> [String] {
+    public func getUsed() -> [String] {
         return usedWords
     }
 }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LockPickRandomiserView: View {
+public struct LockPickRandomiserView: View {
     
     // Current values being shown
     @Binding var lockRingStates: [String]// = ["x", "x", "x"]
@@ -15,7 +15,7 @@ struct LockPickRandomiserView: View {
     // All possible values of the rings
     @Binding var lockRingValues: [String]// = ["x", "y", "z"]
     
-    var body: some View {
+    public var body: some View {
         HStack {
             ForEach(0..<lockRingStates.count, id: \.self) { index in
                 Picker("", selection: $lockRingStates[index]) {

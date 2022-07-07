@@ -7,9 +7,9 @@
 
 import Foundation
 
-typealias CharacterCount = (Character, Int)
+public typealias CharacterCount = (Character, Int)
 
-class LockPickDataGenerator {
+public class LockPickDataGenerator {
     static let shared = LockPickDataGenerator()
     private var team: [String] = []
     private var used: [String] = []
@@ -18,7 +18,7 @@ class LockPickDataGenerator {
     /// - Parameters:
     ///   - allTeam: "All words"
     ///   - unavailableTeam: "Unavailable/Used words"
-    func setup(allTeam: [String], unavailableTeam: [String]){
+    public func setup(allTeam: [String], unavailableTeam: [String]){
         team = allTeam
         used = unavailableTeam
     }
@@ -29,18 +29,25 @@ class LockPickDataGenerator {
         return team.filter { member in !used.contains(member)}
     }
     
-    func getRandomMember() -> String {
+    /// Returns a random member from the available members
+    /// - Returns: <#description#>
+    public func getRandomMember() -> String {
         let member = remainingMembers().randomElement() ?? "ERR"
         return member
     }
     
-    func randomMemberCharacterCounts(member: String) -> [(Character, Int)] {
+    /// Returns the character counts of the unique characters present in a word
+    /// - Parameter member: Target word
+    /// - Returns: <#description#>
+    public func randomMemberCharacterCounts(member: String) -> [(Character, Int)] {
         return characterCounts().filter { characterCount in
             member.contains(characterCount.0)
         }
     }
     
-    func updateUsed(usedInput: [String]) {
+    /// Updates the number of words that have already been used
+    /// - Parameter usedInput: <#usedInput description#>
+    public func updateUsed(usedInput: [String]) {
         used = usedInput
     }
 }

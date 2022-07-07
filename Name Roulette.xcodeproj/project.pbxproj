@@ -21,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		97C38E272877962800F02C10 /* LockPickSwiftUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = LockPickSwiftUI; path = ../../../../Desktop/LockPickSwiftUI; sourceTree = "<group>"; };
 		B66C11552875A6CB000E17CC /* Name Roulette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Name Roulette.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66C11582875A6CB000E17CC /* Name_RouletteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name_RouletteApp.swift; sourceTree = "<group>"; };
 		B66C115A2875A6CB000E17CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +51,7 @@
 		B66C114C2875A6CB000E17CC = {
 			isa = PBXGroup;
 			children = (
+				97C38E272877962800F02C10 /* LockPickSwiftUI */,
 				B66C11572875A6CB000E17CC /* Name Roulette */,
 				B66C11562875A6CB000E17CC /* Products */,
 			);
