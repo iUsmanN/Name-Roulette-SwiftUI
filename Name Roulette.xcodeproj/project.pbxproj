@@ -11,6 +11,13 @@
 		B66C115B2875A6CB000E17CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66C115A2875A6CB000E17CC /* ContentView.swift */; };
 		B66C115D2875A6CC000E17CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66C115C2875A6CC000E17CC /* Assets.xcassets */; };
 		B66C11602875A6CC000E17CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66C115F2875A6CC000E17CC /* Preview Assets.xcassets */; };
+		B66C11672875A8FF000E17CC /* NameGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66C11662875A8FF000E17CC /* NameGenerator.swift */; };
+		B66C11692875C379000E17CC /* RouletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66C11682875C379000E17CC /* RouletteView.swift */; };
+		B66C116B2875C380000E17CC /* RouletteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66C116A2875C380000E17CC /* RouletteViewModel.swift */; };
+		B66C116D287600AE000E17CC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66C116C287600AE000E17CC /* Extensions.swift */; };
+		B66C119F28762B2C000E17CC /* Merriweather-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B66C119E28762B2C000E17CC /* Merriweather-Bold.ttf */; };
+		B6F090D928771026004C2058 /* LockPickRandomiserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F090D828771026004C2058 /* LockPickRandomiserView.swift */; };
+		B6F090DB287710CA004C2058 /* LockPickRandomiserDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F090DA287710CA004C2058 /* LockPickRandomiserDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,14 @@
 		B66C115A2875A6CB000E17CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B66C115C2875A6CC000E17CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B66C115F2875A6CC000E17CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B66C11662875A8FF000E17CC /* NameGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameGenerator.swift; sourceTree = "<group>"; };
+		B66C11682875C379000E17CC /* RouletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteView.swift; sourceTree = "<group>"; };
+		B66C116A2875C380000E17CC /* RouletteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteViewModel.swift; sourceTree = "<group>"; };
+		B66C116C287600AE000E17CC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B66C119E28762B2C000E17CC /* Merriweather-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Bold.ttf"; sourceTree = "<group>"; };
+		B66C11A028762BC1000E17CC /* Name-Roulette-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Name-Roulette-Info.plist"; sourceTree = SOURCE_ROOT; };
+		B6F090D828771026004C2058 /* LockPickRandomiserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockPickRandomiserView.swift; sourceTree = "<group>"; };
+		B6F090DA287710CA004C2058 /* LockPickRandomiserDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockPickRandomiserDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +66,16 @@
 		B66C11572875A6CB000E17CC /* Name Roulette */ = {
 			isa = PBXGroup;
 			children = (
+				B6F090D728770F4A004C2058 /* LockPick-SwiftUI */,
+				B66C11A028762BC1000E17CC /* Name-Roulette-Info.plist */,
+				B66C119E28762B2C000E17CC /* Merriweather-Bold.ttf */,
 				B66C11582875A6CB000E17CC /* Name_RouletteApp.swift */,
 				B66C115A2875A6CB000E17CC /* ContentView.swift */,
 				B66C115C2875A6CC000E17CC /* Assets.xcassets */,
 				B66C115E2875A6CC000E17CC /* Preview Content */,
+				B66C11682875C379000E17CC /* RouletteView.swift */,
+				B66C116A2875C380000E17CC /* RouletteViewModel.swift */,
+				B66C116C287600AE000E17CC /* Extensions.swift */,
 			);
 			path = "Name Roulette";
 			sourceTree = "<group>";
@@ -65,6 +86,16 @@
 				B66C115F2875A6CC000E17CC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B6F090D728770F4A004C2058 /* LockPick-SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				B66C11662875A8FF000E17CC /* NameGenerator.swift */,
+				B6F090D828771026004C2058 /* LockPickRandomiserView.swift */,
+				B6F090DA287710CA004C2058 /* LockPickRandomiserDataSource.swift */,
+			);
+			path = "LockPick-SwiftUI";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B66C119F28762B2C000E17CC /* Merriweather-Bold.ttf in Resources */,
 				B66C11602875A6CC000E17CC /* Preview Assets.xcassets in Resources */,
 				B66C115D2875A6CC000E17CC /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +169,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B66C11692875C379000E17CC /* RouletteView.swift in Sources */,
+				B66C116D287600AE000E17CC /* Extensions.swift in Sources */,
+				B66C116B2875C380000E17CC /* RouletteViewModel.swift in Sources */,
+				B66C11672875A8FF000E17CC /* NameGenerator.swift in Sources */,
+				B6F090DB287710CA004C2058 /* LockPickRandomiserDataSource.swift in Sources */,
 				B66C115B2875A6CB000E17CC /* ContentView.swift in Sources */,
 				B66C11592875A6CB000E17CC /* Name_RouletteApp.swift in Sources */,
+				B6F090D928771026004C2058 /* LockPickRandomiserView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +308,8 @@
 				DEVELOPMENT_TEAM = 524G574595;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Name-Roulette-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "(⌐■_■)";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +339,8 @@
 				DEVELOPMENT_TEAM = 524G574595;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Name-Roulette-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "(⌐■_■)";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

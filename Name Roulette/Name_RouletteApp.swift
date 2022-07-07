@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct Name_RouletteApp: App {
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
