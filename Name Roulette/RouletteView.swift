@@ -20,7 +20,7 @@ struct RouletteView: View {
     
     var body: some View {
         VStack {
-            LockPickRandomiserView(lockRingStates: $viewModel.lockRingStates, lockRingValues: $viewModel.lockRingValues)
+            LockPickRandomiserView(inputLockRingStates: $viewModel.lockRingStates, inputLockRingValues: $viewModel.lockRingValues)
             VStack {
                 Picker("", selection: $teamTab) {
                     Text("All")

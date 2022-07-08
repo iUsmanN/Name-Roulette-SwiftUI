@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		97C38E2A2877982E00F02C10 /* LockPickSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 97C38E292877982E00F02C10 /* LockPickSwiftUI */; };
+		97C38E3B28784AFC00F02C10 /* LockPickSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 97C38E3A28784AFC00F02C10 /* LockPickSwiftUI */; };
 		B66C11592875A6CB000E17CC /* Name_RouletteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66C11582875A6CB000E17CC /* Name_RouletteApp.swift */; };
 		B66C115B2875A6CB000E17CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66C115A2875A6CB000E17CC /* ContentView.swift */; };
 		B66C115D2875A6CC000E17CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66C115C2875A6CC000E17CC /* Assets.xcassets */; };
@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		97C38E272877962800F02C10 /* LockPickSwiftUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = LockPickSwiftUI; path = ../../../../Desktop/LockPickSwiftUI; sourceTree = "<group>"; };
+		97C38E3928784AC700F02C10 /* LockPickSwiftUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = LockPickSwiftUI; path = ../../../../Desktop/LockPickSwiftUI; sourceTree = "<group>"; };
 		B66C11552875A6CB000E17CC /* Name Roulette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Name Roulette.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66C11582875A6CB000E17CC /* Name_RouletteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name_RouletteApp.swift; sourceTree = "<group>"; };
 		B66C115A2875A6CB000E17CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97C38E2A2877982E00F02C10 /* LockPickSwiftUI in Frameworks */,
+				97C38E3B28784AFC00F02C10 /* LockPickSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,7 +54,7 @@
 		B66C114C2875A6CB000E17CC = {
 			isa = PBXGroup;
 			children = (
-				97C38E272877962800F02C10 /* LockPickSwiftUI */,
+				97C38E3928784AC700F02C10 /* LockPickSwiftUI */,
 				B66C11572875A6CB000E17CC /* Name Roulette */,
 				B66C11562875A6CB000E17CC /* Products */,
 				97C38E282877982E00F02C10 /* Frameworks */,
@@ -72,7 +72,7 @@
 		B66C11572875A6CB000E17CC /* Name Roulette */ = {
 			isa = PBXGroup;
 			children = (
-				B6F090D728770F4A004C2058 /* LockPick-SwiftUI */,
+				B6F090D728770F4A004C2058 /* LockPickSwiftUI */,
 				B66C11A028762BC1000E17CC /* Name-Roulette-Info.plist */,
 				B66C119E28762B2C000E17CC /* Merriweather-Bold.ttf */,
 				B66C11582875A6CB000E17CC /* Name_RouletteApp.swift */,
@@ -94,11 +94,11 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B6F090D728770F4A004C2058 /* LockPick-SwiftUI */ = {
+		B6F090D728770F4A004C2058 /* LockPickSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "LockPick-SwiftUI";
+			path = LockPickSwiftUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +118,7 @@
 			);
 			name = "Name Roulette";
 			packageProductDependencies = (
-				97C38E292877982E00F02C10 /* LockPickSwiftUI */,
+				97C38E3A28784AFC00F02C10 /* LockPickSwiftUI */,
 			);
 			productName = "Name Roulette";
 			productReference = B66C11552875A6CB000E17CC /* Name Roulette.app */;
@@ -327,7 +327,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -358,7 +358,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -386,7 +386,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		97C38E292877982E00F02C10 /* LockPickSwiftUI */ = {
+		97C38E3A28784AFC00F02C10 /* LockPickSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = LockPickSwiftUI;
 		};
